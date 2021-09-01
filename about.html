@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services</title>
+<!--<link rel="stylesheet" href="style.css">-->
+
+	
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+ul{ float:right;
+    list-style-type:none;
+	margin-top:30px;
+}
+
+ul li{
+	display:inline-block;
+}
+
+ul li a{
+	text-decoration:none;
+	color:#fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition:0.1s ease;
+}
+
+ul li a:hover{
+	background-color:#fff;
+	color:#000;
+}
+
+.active a
+{background-color:#fff;
+color:#000;}
+
+
+.logo img{
+	float:left;
+	width:160px;
+	height:50px;
+	padding-top:15px;
+	margin:7px;
+	
+}
+
+.main{
+	max-width:1200px;
+	margin:auto;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  text-decoration:none;
+}
+
+.column {
+  float: left;
+  width: 20.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+h3{font-size:30px;
+margin:20px; text-shadow:1px 1px blue;
+ animation: .8s shake infinite alternate;
+}
+
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+}
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.card img:hover{
+-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);}
+.tew {
+    margin-left: 63%;
+}
+.about-section {
+  padding: 10px;
+
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 10px;
+}
+h2 {
+    display: block;text-shadow:1px 1px blue;
+    font-size: 1.3em;
+    margin-block-start: 0.40em;
+    margin-block-end: 0.80em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.tew h1{
+font-size:20px;
+padding-top:20px;
+text-align:justify;
+text-decoration:none;}
+.para1{
+font-size: 15px;
+
+text-align:left;
+color:gray;
+
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button{
+top:60%;
+left:50%;
+padding-right:10px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   font-family:Century Gothic;
+   font-size:12px;
+   bottom: 0;
+   width: 100%;
+  background-color: #474e5d;
+   color: white;
+
+   text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+</style>
+</head>
+<body>
+     
+
+<header>
+<div class="main">
+		<div class="logo">
+			<img src="logo2.jpg" alt="logo">
+	    </div>
+				<ul> 
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="g1.html">Gallery</a></li>
+				<li class="active"><a href="#">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>
+	</div>
+</header>
+	<div class="about-section">
+  <h6 style="color:#474e5d">.</h6>
+  
+</div>
+
+    <h3 style="text-align:center"><u>Our Team</u></h3>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="j1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Bussiness degree from harvard.
+            entrepreneur, webmaster, and former financial trader.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="j4.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Manager</p>
+        <p>Great in delegating responsibilities and supervising business operations
+          
+         </p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="j3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Director</p>
+        <p>Exceptional leadership,negotiator, business and interpersonal proficiency  </p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+	  
+    </div>
+	
+</div><div class="tew">
+<h1>WHY CHOOSE US?</h1>
+<p class="para1">Our hotel's central location in Bengaluru, India puts guests in the heart of the business district and close to the retail hub of UB City.</p>
+
+<h1><b>EVENTS AND FUNCTION</b></h1>
+<p class="para1">Host a wedding or business conference in one of our hotel's sophisticated and versatile event spaces, the largest of which can accommodate 500 guests.</p>
+
+<h1><b>LOCATION</b></h1>
+<p class="para1">Located adjacent to Cubbon Park, our hotel features scenic views of one Bengaluru's most beloved public spaces.</p>
+</div></div><div class="footer">
+  <p>&copy Centara Hotels and Resorts,Demo Land 2020</p>
+</div>
+    <div class="footer"> SIDDHI YEOLE</div>
+    </body>
+</html>
+
+
+
