@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+	var maxLength = 200;
+	$(".show-read-more").each(function(){
+		var myStr = $(this).text();
+		if($.trim(myStr).length > maxLength){
+			var newStr = myStr.substring(0, maxLength);
+			var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+			$(this).empty().html(newStr);
+			$(this).append(' <a href="javascript:void(0);" class="read-more">read more...</a>');
+			$(this).append('<span class="more-text">' + removedStr + '</span>');
+		}
+	});
+	$(".read-more").click(function(){
+		$(this).siblings(".more-text").contents().unwrap();
+		$(this).remove();
+	});
+});
+</script>
+<style>
+    .show-read-more .more-text{
+        display: none;
+    }
+</style>
+</head>
+<body>
+<header class="head1">
+     <div class="main">
+		<div class="logo12">
+			<img src="logo2.jpg" alt="logo">
+	    </div>
+				<ul> 
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="services.html">Services</a></li>
+				<li><a href="g1.html">Gallery</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>
+	 </div>
+	 <div class="wrapper">
+			<h1></h1>
+  <div class="team">
+    <div class="team_member">
+      <div class="team_img">
+        <img src="h7.jpg" alt="services">
+      </div>
+      <h3>Location</h3>
+      <p class="role"><mark>Easy To Reach</mark></p>
+      <p class="show-read-more">We are geared towards the fulfilment of the needs of any discerning guest and below you can find an alphabetical overview of the most commonly-used services and facilities offered by our boutique hotel.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="h6.jpg" alt="events">
+      </div>
+      <h3>Events</h3>
+      <p class="role"><mark>Weddings and Occassion</mark></p>
+      <p class="show-read-more">Hotel meetings and events are a great way to boost revenue at your property and attract a constant stream of professionals and business travellers.Having or creating a function space at you
+function, gathering, get-together, jamboree.</p></div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="h5.jpg" alt="ambience">
+      </div>
+      <h3>Ambience</h3>
+      <p class="role"><mark>Atmosphere</mark></p>
+      <p class="show-read-more">Recreating that one perfect ambience requires a lot of time, attention and investment. Hotelogix’s PMS is that valuable property management tool that helps hoteliers to cut cost, save time, and solve management woes, whilst diverting it towards recreating the perfect ambience for your guests. needs of any discerning guest and</p>
+    </div>
+	
+  </div>
+</div>
+ <div class="wrapper2">
+			<h1></h1>
+  <div class="team1">
+    <div class="team_member">
+      <div class="team_img">
+        <img src="r1.jpg" alt="services">
+      </div>
+      <h3>Reservation</h3>
+      <p class="role"><mark>Facilities and Services</mark></p>
+      <p class="show-read-more">We are geared towards the fulfilment of the needs of any discerning guest and below you can find an alphabetical overview of the most commonly-used services and facilities offered by our boutique hotel.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="staff.jpg" alt="events">
+      </div>
+      <h3>Friendly Staff</h3>
+      <p class="role"><mark>Helping Hands</mark></p>
+      <p class="show-read-more">We are geared towards the fulfilment of the needs of any discerning guest and below you can find an alphabetical overview of the most commonly-used services and facilities offered by our boutique hotel.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    </p></div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="wifi.jpg" alt="ambience">
+      </div>
+      <h3>Free Wifi</h3>
+      <p class="role"><mark>Access to Network</mark></p>
+      <p class="show-read-more">Recreating that one perfect ambience requires a lot of time, attention and investment. Hotelogix’s PMS is that valuable property management tool that helps hoteliers to cut cost, save time, and solve management woes, whilst diverting it towards recreating the perfect ambience for your guests.</p>
+    </div>
+	
+  </div>
+</div>
+<div class="footer1">
+  <p><marquee direction="right">&copy Centara Hotels and Resorts,Demo Land 2020</marquee></p>
+</div>	
+</body>
+</html>
